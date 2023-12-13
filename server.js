@@ -13,5 +13,9 @@ app.use('/api', (req, res, next) => {
     res.status(200).json(books)
 })
 
+app.use('/api/re', (req, res, next) => {
+    const books = ['pen', 'paper', 'box', 'box', 'pencil']
+    res.status(200).json(books)
+})
 
 app.listen(3000)
