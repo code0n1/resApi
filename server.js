@@ -9,7 +9,7 @@ app.use(cors({
 }))
 
 app.use('/api', (req, res, next) => {
-    const books = ['pen', 'paper', 'box']
+    const books = ['pen', 'paper', 'box', 'box']
     res.status(200).json(books)
 })
 
